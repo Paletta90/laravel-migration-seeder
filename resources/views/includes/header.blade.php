@@ -6,7 +6,7 @@
                     <a class="nav-link active" aria-current="page" href=" {{ route('home') }} ">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ route('today') }}">Partenze in data odierna</a>
                 </li>
             </ul>
         </div>
