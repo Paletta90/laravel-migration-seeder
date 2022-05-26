@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Train;
 
+use Carbon\Carbon;
+
 class PageController extends Controller
 {
     public function home(){
@@ -17,7 +19,8 @@ class PageController extends Controller
 
     public function today(){
 
-        $trainsToday = Train::where('Data di partenza', '2022-05-26');
+        $trainsToday = Train::all() -> where('Data di partenza', Carbon::today()->toDateString());
+        // dd(Carbon::today()->toDateString());
         return view('today', compact('trainsToday'));
 
     }
