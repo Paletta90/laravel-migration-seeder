@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
 
-    <title>Real Estate!!!</title>
+    <title>Train</title>
 </head>
 <body>
     
