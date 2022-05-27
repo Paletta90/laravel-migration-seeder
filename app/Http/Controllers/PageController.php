@@ -20,7 +20,6 @@ class PageController extends Controller
     public function today(){
 
         $trainsToday = Train::all() -> where('Data di partenza', Carbon::today()->toDateString());
-        // dd(Carbon::today()->toDateString());
         return view('today', compact('trainsToday'));
 
     }
